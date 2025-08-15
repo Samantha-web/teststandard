@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bicycle Frame Standards</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+        background-color: #f8f9fa;
+        color: #343a40;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        text-align: center;
+        color: #2c6e49;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #e9ecef;
+      }
+      #login-form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+      #login-form h2 {
+        color: #2c6e49;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #495057;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        box-sizing: border-box;
+      }
+      .login-btn {
+        background-color: #2c6e49;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+      }
+      .login-btn:hover {
+        background-color: #245c3d;
+      }
+      #login-error {
+        color: #dc3545;
+        margin-top: 15px;
+        display: none;
+      }
+      #main-content {
+        display: none;
+      }
+      #selector {
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 20px;
+        background-color: #e9f5e9;
+        border-radius: 8px;
+      }
+      select {
+        padding: 12px 15px;
+        font-size: 16px;
+        margin: 0 10px;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+      }
+      select:focus {
+        border-color: #2c6e49;
+        box-shadow: 0 0 0 3px rgba(44, 110, 73, 0.2);
+        outline: none;
+      }
+      label {
+        font-weight: 600;
+        color: #495057;
+      }
+      #itemSelector {
+        display: none;
+        margin-top: 15px;
+      }
+      #details {
+        display: none;
+        background-color: #fff;
+        padding: 25px;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      #details h2 {
+        color: #2c6e49;
+        margin-top: 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e9ecef;
+      }
+      #details ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      #details li {
+        margin-bottom: 25px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+      }
+      #details li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+      #details strong {
+        display: block;
+        color: #212529;
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #2c6e49;
+      }
+      #test-times {
+        display: none;
+        background-color: #fff;
+        padding: 25px;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        margin-top: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      #test-times h2 {
+        color: #2c6e49;
+        margin-top: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+      th,
+      td {
+        border: 1px solid #dee2e6;
+        padding: 12px 15px;
+        text-align: center;
+      }
+      th {
+        background-color: #2c6e49;
+        color: white;
+        font-weight: 600;
+      }
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+      .test-params {
+        width: 100%;
+        margin: 20px 0;
+      }
+      .test-params td {
+        text-align: left;
+        padding: 10px 15px;
+      }
+      .test-params td:first-child {
+        width: 40%;
+        font-weight: 500;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      .header-row th {
+        background-color: #4caf50;
+      }
+      .sub-header th {
+        background-color: #66bb6a;
+      }
+      .test-section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #e9ecef;
+      }
+      .test-section:last-child {
+        border-bottom: none;
+      }
+      .test-section h3 {
+        color: #2c6e49;
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e9ecef;
+      }
+      .btn {
+        background-color: #2c6e49;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 5px;
+      }
+      .btn:hover {
+        background-color: #245c3d;
+        transform: translateY(-2px);
+      }
+      .btn svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+      .mc-buttons {
+        text-align: center;
+        margin: 20px 0;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        color: #6c757d;
+        font-size: 14px;
+        border-top: 1px solid #e9ecef;
+      }
+      .note-box {
+        background-color: #e8f4e8;
+        border-left: 4px solid #2c6e49;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 4px 4px 0;
+      }
+      .note-box p {
+        margin: 5px 0;
+      }
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Login Form -->
+      <div id="login-form">
+        <h2>Secure Access</h2>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+        </div>
+        <button class="login-btn" id="login-btn">Login</button>
+        <p id="login-error">Invalid username or password</p>
+      </div>
+
+      <!-- Main Content (hidden until login) -->
+      <div id="main-content">
+        <button
+          class="btn"
+          onclick="location.href='https://samantha-web.github.io/navigationhub/'"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            />
+          </svg>
+          Back to Home
+        </button>
+        <button class="btn">
+          <a href="Pedalihg -1-13022025114919.pdf">Pedaling Test MC Manual</a>
+        </button>
+        <button class="btn">
+          <a href="VER_HZ TESTING n-13022025120523.pdf"
+            >Vertical & Horizontal MC Manual</a
+          >
+        </button>
+
+        <h1>Bicycle Frame and Component Test Standards</h1>
+
+        <div id="selector">
+          <label for="bikeType">Select Standard and Bicycle Type:</label>
+          <select id="bikeType">
+            <option value="">-- Choose --</option>
+            <option value="iso4210_city">ISO 4210 - City and Trekking</option>
+            <option value="iso4210_young">ISO 4210 - Young Adult</option>
+            <option value="iso4210_mountain">ISO 4210 - Mountain</option>
+            <option value="iso4210_racing">ISO 4210 - Racing</option>
+            <option value="iso8098_children">
+              ISO 8098 - Children (12" - 18")
+            </option>
+          </select>
+          <div id="itemSelector">
+            <label for="itemType">Select Component:</label>
+            <select id="itemType">
+              <option value="">-- Choose --</option>
+              <option value="Handlebar">Handlebar</option>
+              <option value="Frame">Frame</option>
+              <option value="Fork">Fork</option>
+              <option value="Hub Disk Brake">Hub Disk Brake</option>
+              <option value="Pedals">Pedals</option>
+              <option value="Crank">Crank</option>
+              <option value="Saddle">Saddle</option>
+              <option value="Seat Post">Seat Post</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="details">
+          <h2 id="title"></h2>
+          <div class="mc-buttons" id="mc-buttons">
+            <button class="btn" id="pedaling-btn">
+              Download Pedaling Test MC Settings
+            </button>
+            <button class="btn" id="vh-btn">
+              Download Vertical & Horizontal MC Settings
+            </button>
+          </div>
+          <ul id="items"></ul>
+        </div>
+
+        <div id="test-times">
+          <h2>Estimated Test Durations (Approximate)</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Hz</th>
+                <th>12,000 cycles</th>
+                <th>20,000 cycles</th>
+                <th>50,000 cycles</th>
+                <th>100,000 cycles</th>
+                <th>200,000 cycles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>2 hours</td>
+                <td>3 hours</td>
+                <td>7 hours</td>
+                <td>14 hours</td>
+                <td>28 hours</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1.1 hours</td>
+                <td>1.9 hours</td>
+                <td>5 hours</td>
+                <td>10 hours</td>
+                <td>18.5 hours</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>0.8 hours</td>
+                <td>1.4 hours</td>
+                <td>3.5 hours</td>
+                <td>7 hours</td>
+                <td>13.9 hours</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>0.7 hours</td>
+                <td>1.1 hours</td>
+                <td>3 hours</td>
+                <td>6 hours</td>
+                <td>11.1 hours</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="note-box">
+            <p>
+              <b>Note:</b> Times are approximate and based on continuous testing
+              without pauses.
+            </p>
+            <p>
+              1. The fatigue test for the two stages of pedaling is carried out
+              on the same crank arm.
+            </p>
+            <p>
+              2. The fatigue test should be completed before other tests that
+              may potentially damage the test sample (except for Children's
+              bikes).
+            </p>
+            <p>
+              3. The bending fatigue test uses the original pedal crank (usually
+              using the pedal crank after the pedaling fatigue test).
+            </p>
+            <p>
+              4. The bending fatigue test at 45° and 30° should use two sets of
+              bending fixtures.
+            </p>
+          </div>
+        </div>
+
+        <footer>Prepared by Samantha • 14/08/2025</footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
