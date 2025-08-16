@@ -639,15 +639,18 @@ Inspection Standard: ${params.iso}
 Remarks: ${params.remarks}
 Company Name: ${params.companyname}
 
+
 === Protection Settings ===
-MaxDis First [mm]: ${params.maxdisf}
-MaxDis Second [mm]: ${params.maxdiss}
-MinDis First [mm]: ${params.mindisf}
-MinDis Second [mm]: ${params.mindiss}
-MaxForce First [N]: ${params.maxforcef}
-MaxForce Second [N]: ${params.maxforces}
-MinForce First [N]: ${params.minforcef}
-MinForce Second [N]: ${params.minforces}`;
+----------------------------------------------------
+             |  First Cylinder   | Second Cylinder |
+----------------------------------------------------
+MaxDis [mm]: |${params.maxdisf}                  |${params.maxdiss}
+---------------------------------------------------- 
+MinDis [mm]: |${params.mindisf}                 |${params.mindiss}
+----------------------------------------------------
+MaxForce [N]:|${params.maxforcef}                |${params.maxforces}
+----------------------------------------------------
+MinForce [N]:|${params.minforcef}                 |${params.minforces}`;
       }
 
       function downloadFile(content, filename) {
