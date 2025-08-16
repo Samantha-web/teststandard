@@ -71,6 +71,14 @@
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
                 modeofcontrol: "two-way reverse control",
+                maxdisf:10,
+                maxdiss:10,
+                mindisf:-10,
+                mindiss:-10,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-50,
+                minforces:-50,
               },
             },
             "Frame Horizontal": {
@@ -89,7 +97,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 1]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             "Frame Vertical": {
@@ -108,7 +124,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 2]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             Fork: "450 N 100,000",
@@ -140,6 +164,14 @@
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
                 modeofcontrol: "two-way reverse control",
+                maxdisf:10,
+                maxdiss:10,
+                mindisf:-10,
+                mindiss:-10,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-50,
+                minforces:-50,
               },
             },
             "Frame Horizontal": {
@@ -158,7 +190,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 1]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             "Frame Vertical": {
@@ -177,7 +217,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 2]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             Fork: "450 N 100,000",
@@ -209,6 +257,14 @@
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
                 modeofcontrol: "two-way reverse control",
+                maxdisf:10,
+                maxdiss:10,
+                mindisf:-10,
+                mindiss:-10,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-50,
+                minforces:-50,
               },
             },
             "Frame Horizontal": {
@@ -227,7 +283,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 1]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             "Frame Vertical": {
@@ -246,7 +310,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 2]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             Fork: "650 N 100,000",
@@ -278,6 +350,14 @@
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
                 modeofcontrol: "two-way reverse control",
+                maxdisf:10,
+                maxdiss:10,
+                mindisf:-10,
+                mindiss:-10,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-50,
+                minforces:-50,
               },
             },
             "Frame Horizontal": {
@@ -296,7 +376,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 1]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             "Frame Vertical": {
@@ -315,7 +403,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 2]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             Fork: "620 N 100,000",
@@ -347,6 +443,14 @@
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
                 modeofcontrol: "two-way reverse control",
+                maxdisf:10,
+                maxdiss:10,
+                mindisf:-10,
+                mindiss:-10,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-50,
+                minforces:-50,
               },
             },
             "Frame Horizontal": {
@@ -365,7 +469,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 1]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             "Frame Vertical": {
@@ -384,7 +496,15 @@
                 temperature: 31,
                 remarks: 'Ex: Size 26 * 12.5"',
                 companyname: "TRIDENT",
-                modeofcontrol: "one-way control",
+                modeofcontrol: "one-way control [electric cylinder 2]",
+                maxdisf:20,
+                maxdiss:20,
+                mindisf:-20,
+                mindiss:-20,
+                maxforcef:1500,
+                maxforces:1500,
+                minforcef:-1500,
+                minforces:-100,
               },
             },
             Fork: "400 N 100,000",
@@ -616,28 +736,28 @@ MinForce [N]: 0`;
             </tr>
             <tr class="sub-header">
               <th>Protect</th>
-              <th>First</th>
-              <th>Second</th>
+              <th>First Cylinder</th>
+              <th>Second Cylinder</th>
             </tr>
             <tr>
               <td>MaxDis [mm]</td>
-              <td>0</td>
-              <td>0</td>
+              <td>${testData.params.maxdisf}</td>
+              <td>${testData.params.maxdiss}</td>
             </tr>
             <tr>
               <td>MinDis [mm]</td>
-              <td>0</td>
-              <td>0</td>
+              <td>${testData.params.mindisf}</td>
+              <td>${testData.params.mindiss}</td>
             </tr>
             <tr>
               <td>MaxForce [N]</td>
-              <td>0</td>
-              <td>0</td>
+              <td>${testData.params.maxforcef}</td>
+              <td>${testData.params.maxforces}</td>
             </tr>
             <tr>
               <td>MinForce [N]</td>
-              <td>0</td>
-              <td>0</td>
+              <td>${testData.params.minforcef}</td>
+              <td>${testData.params.minforces}</td>
             </tr>
           </table>`;
         }
