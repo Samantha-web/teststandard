@@ -640,10 +640,14 @@ Remarks: ${params.remarks}
 Company Name: ${params.companyname}
 
 === Protection Settings ===
-MaxDis [mm]: 0
-MinDis [mm]: 0
-MaxForce [N]: 0
-MinForce [N]: 0`;
+MaxDis First [mm]: ${params.maxdisf}
+MaxDis Second [mm]: ${params.maxdiss}
+MinDis First [mm]: ${params.mindisf}
+MinDis Second [mm]: ${params.mindiss}
+MaxForce First [N]: ${params.maxforcef}
+MaxForce Second [N]: ${params.maxforces}
+MinForce First [N]: ${params.minforcef}
+MinForce Second [N]: ${params.minforces}`;
       }
 
       function downloadFile(content, filename) {
