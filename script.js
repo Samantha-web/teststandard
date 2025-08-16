@@ -625,19 +625,19 @@
 
       function formatTestParameters(params) {
         return `Test Number: ${params.testnumber}
-Mode of Control: ${params.modeofcontrol}
-Number of Tests: ${params.cycles}
-Frequency (Hz): ${params.frequency}
-Magnitude of Force (N): ${params.forcef}
-Amplitude under Force (N): ${params.forceb}
-Allowable Deviation Times: 10
-Tester: ${params.tester}
-Product Name: ${params.productname}
-Temperature (°C): ${params.temperature}
-Inspection Mode: ${params.inspectionmode}
-Inspection Standard: ${params.iso}
-Remarks: ${params.remarks}
-Company Name: ${params.companyname}
+Mode of Control           : ${params.modeofcontrol}
+Number of Tests           : ${params.cycles}
+Frequency (Hz)            : ${params.frequency}
+Magnitude of Force (N)    : ${params.forcef}
+Amplitude under Force (N) : ${params.forceb}
+Allowable Deviation Times : 10
+Tester                    : ${params.tester}
+Product Name              : ${params.productname}
+Temperature (°C)          : ${params.temperature}
+Inspection Mode           : ${params.inspectionmode}
+Inspection Standard       : ${params.iso}
+Remarks                   : ${params.remarks}
+Company Name              : ${params.companyname}
 
 
 === Protection Settings ===
